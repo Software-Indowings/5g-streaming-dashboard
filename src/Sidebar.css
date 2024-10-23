@@ -1,0 +1,59 @@
+/* src/Sidebar.css */
+
+.sidebar {
+    width: 250px;
+    height: 100vh; /* Full height */
+    background-color: #0a0a0b; /* Dark background */
+    color: white; /* White text */
+    padding: 0; /* Corrected padding */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    position: fixed; /* Fix it to the side */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.sidebar h2 {
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 28px; /* Increased title font size */
+    text-align: center; /* Center the title */
+    letter-spacing: 1px; /* Slightly increased letter spacing */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+}
+
+.sidebar ul li {
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Center items vertically */
+    padding: 15px; /* Padding for each item */
+    margin: 40px 0; /* Space between items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s, transform 0.3s; /* Smooth background and scale change */
+    font-size: 18px; /* Increased font size for list items */
+}
+
+.sidebar ul li:hover {
+    background-color: #34495e; /* Change background on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.sidebar ul li:active {
+    background-color: #1abc9c; /* Active state color */
+}
+
+.sidebar-button {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Button-like padding */
+    width: 100%; /* Full width for button effect */
+    border: none; /* Remove border */
+    background: transparent; /* Make background transparent */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.sidebar-button:hover {
+    background-color: #34495e; /* Change background on hover */
+}
